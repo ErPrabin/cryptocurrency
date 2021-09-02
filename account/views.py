@@ -38,10 +38,10 @@ def register(request):
             response = redirect('/')
             # log the user in
             return response
-        return redirect('/account/login/')
     else:
         form = UserCreationForm()
-        return render(request, 'register.html', {'form': form})
+    return render(request, 'register.html', {'form': form})
+
 
 def logout_view(request):
     logout(request)

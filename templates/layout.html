@@ -80,10 +80,9 @@
                   >
                     <ul>
                       <li>
-                        <a href="#"
-                          >home <i class="fal fa-angle-down font-size-12"></i
-                        ></a>
-                        <ul class="drop-menu">
+                        <a href="{% url 'home:index' %}"
+                          >home </a>
+                        {% comment %} <ul class="drop-menu">
                           <li><a href="index.html">home one</a></li>
                           <li><a href="index-2.html">home two</a></li>
                           <li><a href="index-3.html">home three</a></li>
@@ -93,13 +92,12 @@
                               <span class="badge badge-info ml-1">New</span></a
                             >
                           </li>
-                        </ul>
+                        </ul> {% endcomment %}
                       </li>
                       <li class="has-mega-menu">
-                        <a href="#"
-                          >pages <i class="fal fa-angle-down font-size-12"></i
-                        ></a>
-                        <div class="drop-menu mega-menu">
+                        <a href="{% url 'home:contact' %}"
+                          >Contact</a>
+                        {% comment %} <div class="drop-menu mega-menu">
                           <ul class="row no-gutters">
                             <li class="mega-menu-item col-lg-4">
                               <ul>
@@ -157,9 +155,9 @@
                               </ul>
                             </li>
                           </ul>
-                        </div>
+                        </div> {% endcomment %}
                       </li>
-                      <li>
+                      {% comment %} <li>
                         <a href="#"
                           >team <i class="fal fa-angle-down font-size-12"></i
                         ></a>
@@ -167,8 +165,8 @@
                           <li><a href="team-member.html">team</a></li>
                           <li><a href="team-single.html">team detail</a></li>
                         </ul>
-                      </li>
-                      <li>
+                      </li> {% endcomment %}
+                      {% comment %} <li>
                         <a href="#"
                           >blog <i class="fal fa-angle-down font-size-12"></i
                         ></a>
@@ -186,7 +184,7 @@
                           </li>
                           <li><a href="blog-single.html">blog detail</a></li>
                         </ul>
-                      </li>
+                      </li> {% endcomment %}
                     </ul>
                   </nav>
                   <div class="navbar-toolbar d-flex align-items-center">
@@ -251,7 +249,7 @@
     <section class="footer-area padding-top-80px pb-4">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-6 col-md-6">
             <div class="footer-item mb-5">
               <a href="index.html" class="d-block">
                 <img src="images/logo-black.png" alt="logo" />
@@ -270,13 +268,12 @@
                   >
                 </li>
                 <li class="mb-3">
-                  <i class="fal fa-map-marker-alt mr-1 font-size-14"></i> New
-                  York, United States
+                  <i class="fal fa-map-marker-alt mr-1 font-size-14"></i> Australia
                 </li>
-                <li class="mb-3">
+                {% comment %} <li class="mb-3">
                   <i class="fal fa-clock mr-1 font-size-14"></i> Mon-Sat 08AM -
                   05PM
-                </li>
+                </li> {% endcomment %}
               </ul>
               <div class="social-icons">
                 <a href="#" class="icon-element icon-element-sm mr-1"
@@ -296,7 +293,7 @@
             <!-- end footer-item -->
           </div>
           <!-- end col-lg-3 -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-6 col-md-6">
             <div class="footer-item mb-5">
               <h5 class="mb-3 font-weight-semi-bold">Company</h5>
               <div class="title-shape border-bottom-0"><span></span></div>
@@ -314,7 +311,7 @@
             <!-- end footer-item -->
           </div>
           <!-- end col-lg-3 -->
-          <div class="col-lg-3 col-md-6">
+          {% comment %} <div class="col-lg-3 col-md-6">
             <div class="footer-item mb-5">
               <h5 class="mb-3 font-weight-semi-bold">Help & Support</h5>
               <div class="title-shape border-bottom-0"><span></span></div>
@@ -330,9 +327,9 @@
               </ul>
             </div>
             <!-- end footer-item -->
-          </div>
+          </div> {% endcomment %}
           <!-- end col-lg-3 -->
-          <div class="col-lg-3 col-md-6">
+          {% comment %} <div class="col-lg-3 col-md-6">
             <div class="footer-item mb-5">
               <h5 class="mb-3 font-weight-semi-bold">
                 Subscribe to Newsletter
@@ -353,7 +350,7 @@
               </form>
             </div>
             <!-- end footer-item -->
-          </div>
+          </div> {% endcomment %}
           <!-- end col-lg-3 -->
         </div>
         <!-- end row -->
@@ -365,8 +362,7 @@
           class="d-flex flex-wrap align-items-center justify-content-between"
         >
           <p class="copy-desc">
-            Copyright &copy; 2021 Bitcon. All Rights Reserved. By
-            <a href="https://techydevs.com/">TechyDevs</a>
+            Copyright &copy; 2021 Bitcon.
           </p>
           <div class="select-picker-wrap">
             <select

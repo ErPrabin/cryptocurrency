@@ -1,0 +1,100 @@
+{% extends 'layout.html' %} {% block content %}
+{% load static %}
+
+
+<!-- ================================
+    START BREADCRUMB AREA
+================================= -->
+<section class="breadcrumb-area bread-bg">
+    <div class="overlay"></div><!-- end overlay -->
+    <div class="container">
+        <div class="breadcrumb-content d-flex flex-wrap align-items-center justify-content-between position-relative">
+            <h2 class="sec-title text-white my-2">Contact Us</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+        </div><!-- end breadcrumb-content -->
+    </div><!-- end container -->
+</section><!-- end hero-area -->
+<!-- ================================
+    END BREADCRUMB AREA
+================================= -->
+
+<!-- ================================
+       START CONTACT AREA
+================================= -->
+<section class="contact-area section-padding">
+    <div class="container">
+        <div class="alert alert-success alert-message mb-3" role="alert"></div>
+        <div class="row">
+            <div class="col-lg-5 align-self-center">
+                <div class="contact-content mb-5 mb-lg-0 pr-lg-5">
+                    <h2 class="sec-title mb-3">Feel Free to Write Us a Message</h2>
+                    <p>Need to speak to us? Do you have any queries or suggestions? Please contact us about all enquiries including membership and volunteer work using the form below.</p>
+                </div>
+            </div><!-- end col-lg-5 -->
+            <div class="col-lg-7">
+                <form action="https://techydevs.com/demos/themes/html/bitcon-demo/bitcon/php/contact.php" class="contact-form card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 form-group">
+                                <input id="name" class="form-control form--control" type="text" name="name" placeholder="Full name">
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6 col-md-6 form-group">
+                                <input id="email" class="form-control form--control" type="email" name="email" placeholder="Email address">
+                            </div><!-- end col-lg-6 -->
+                        </div><!-- end row -->
+                        <div class="form-group">
+                            <input id="subject" class="form-control form--control" type="text" name="subject" placeholder="Subject">
+                        </div><!-- end form-group -->
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-control form--control" rows="4" placeholder="Write Message Here"></textarea>
+                        </div><!-- end form-group -->
+                        <button id="send-message-btn" class="btn btn-primary" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div><!-- end col-lg-7 -->
+        </div><!-- end row -->
+        <div class="row my-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="card hover-y text-center">
+                    <div class="card-body">
+                        <div class="icon-element">
+                            <i class="fal fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="card-title mt-4">Our Address</h4>
+                        <p class="card-text">Melbourne, Australia, 105 South Park Avenue</p>
+                    </div>
+                </div><!-- end card -->
+            </div><!-- end col-lg-4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card hover-y text-center">
+                    <div class="card-body">
+                        <div class="icon-element">
+                            <i class="fal fa-phone"></i>
+                        </div>
+                        <h4 class="card-title mt-4">Call Us</h4>
+                        <p class="card-text">+1-302-123-4567</p>
+                    </div>
+                </div><!-- end card -->
+            </div><!-- end col-lg-4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card hover-y text-center">
+                    <div class="card-body">
+                        <div class="icon-element">
+                            <i class="fal fa-envelope"></i>
+                        </div>
+                        <h4 class="card-title mt-4">Email Address</h4>
+                        <p class="card-text"><a href="mailto:info@bitcon.com" class="btn-link">info@bitcon.com</a></p>
+                    </div>
+                </div><!-- end card -->
+            </div><!-- end col-lg-4 -->
+        </div><!-- end row -->
+        <div id="map" style="height: 400px"></div><!-- end map -->
+    </div><!-- end container -->
+</section><!
+
+{% endblock%}

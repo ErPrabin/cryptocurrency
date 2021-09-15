@@ -5,5 +5,6 @@ app_name = 'home'
 
 urlpatterns = [
     path('', views.index,name='index'),
+    path('getprediction/', views.getPrediction,name='getPrediction'),
     path('contact/', views.contact,name='contact'),
 ]

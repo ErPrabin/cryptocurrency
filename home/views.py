@@ -48,7 +48,9 @@ def getPrediction(request):
             predicted_value.append(Y_pred_scaled[0])
         return predicted_value
     values = predictor(3)
-    return HttpResponse(values)
+    for value in values:
+        return HttpResponse(value)
+    # return HttpResponse(values[0][0])
 
 
 @login_required(login_url='/account/login/')

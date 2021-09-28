@@ -52,7 +52,7 @@
           <div class="main-menu-wrapper bg-transparent rounded-0 p-0">
             <div class="row align-items-center">
               <div class="col-lg-2">
-                <a href="index.html" class="main-logo">
+                <a href="{% url 'home:index' %}" class="main-logo">
                   <img
                     class="sticky-logo-hide"
                     src="{% static 'images/logo-white.png' %} "
@@ -226,18 +226,6 @@
 
     {% endblock %}
 
-    <section class="cta-area section-padding text-center bg-gray">
-      <div class="container">
-        <h2 class="sec-title mb-3">Get Started Today With Bitcoin</h2>
-        <p class="sec-desc mb-4">
-          Open account for free and start trading Bitcoin!
-        </p>
-        <a href="sign-up.html" class="btn btn-primary"
-          >Register Now <i class="fal fa-angle-right ml-1"></i
-        ></a>
-      </div>
-      <!-- end container -->
-    </section>
     <!-- end cta-area -->
     <!-- ================================
        START CTA AREA
@@ -251,8 +239,8 @@
         <div class="row">
           <div class="col-lg-6 col-md-6">
             <div class="footer-item mb-5">
-              <a href="index.html" class="d-block">
-                <img src="images/logo-black.png" alt="logo" />
+              <a href="{% url 'home:index' %}" class="d-block">
+                <img src="{% static 'images/logo-white.png' %}" alt="logo" />
               </a>
               <ul class="list-items pt-4">
                 <li class="mb-3">
@@ -298,14 +286,14 @@
               <h5 class="mb-3 font-weight-semi-bold">Company</h5>
               <div class="title-shape border-bottom-0"><span></span></div>
               <ul class="list-items list-items-hover pt-4">
-                <li class="mb-2"><a href="about.html">About Us</a></li>
+                <!-- <li class="mb-2"><a href="about.html">About Us</a></li>
                 <li class="mb-2"><a href="team-member.html">Our Team</a></li>
                 <li class="mb-2"><a href="pricing.html">Pricing</a></li>
-                <li class="mb-2"><a href="service.html">Services</a></li>
-                <li class="mb-2"><a href="contact.html">Contact Us</a></li>
-                <li class="mb-2">
+                <li class="mb-2"><a href="service.html">Services</a></li> -->
+                <li class="mb-2"><a href="{% url 'home:contact' %}">Contact Us</a></li>
+                <!-- <li class="mb-2">
                   <a href="blog-grid-no-sidebar.html">Blog</a>
-                </li>
+                </li> -->
               </ul>
             </div>
             <!-- end footer-item -->
